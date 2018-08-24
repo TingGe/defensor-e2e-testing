@@ -1,0 +1,27 @@
+version: "2.1"
+
+services:
+  hub:
+    container_name: hub
+    image: selenium/hub:3.14.0-arsenic
+    ports:
+      - "4444:4444" # for webdriver
+  node-chrome:
+    container_name: node-chrome
+    image: selenium/node-chrome:3.14.0-arsenic
+    depends_on:
+      - hub
+    environment:
+      - HUB_PORT_4444_TCP_ADDR=hub
+      - HUB_PORT_4444_TCP_PORT=4444
+  denfensor-testing:
+    container_name: denfensor-testing
+    image: denfensor-testing
+    build: .
+    command: npm test
+    volumes:
+      - ~/reports:/usr/defensor/e2eTest/reports
+    shm_size: 4G
+    depends_on:
+      - hub
+      - node-chrome

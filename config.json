@@ -1,0 +1,16 @@
+{
+    "webdriver": {
+        "host": "hub",
+        "port": "4444",
+        "browsers": "chrome"
+    },
+    "vars": {
+        "test_url": "https://baidu.com/"
+    },
+    "recorder": {
+        "pathAttrs": "data-id,data-name,type,data-type,role,data-role,data-value",
+        "attrValueBlack": "",
+        "classValueBlack": "",
+        "hideBeforeExpect": ""
+    }
+}
