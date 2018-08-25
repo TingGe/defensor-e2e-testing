@@ -1,6 +1,4 @@
-# Defensor E2E Testing
-
-# <img src="https://raw.githubusercontent.com/TingGe/defensor-e2e-testing/master/docs/logo.png" width="60px"> Defensor
+#  <img src="https://raw.githubusercontent.com/TingGe/defensor-e2e-testing/master/docs/logo.png" width="60px"> Defensor E2E Testing
 
 一套基于 “UI Recorder + F2eTest + 持续集成引擎 + 国际化报告服务 + Hubot + Docker” 等技术二次开发的、可自动化运营的、用于 E2E 级功能测试的、自动化测试解决方案。
 
