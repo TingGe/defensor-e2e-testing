@@ -6,6 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Runtime data
+.DS_Store
 pids
 *.pid
 *.seed
