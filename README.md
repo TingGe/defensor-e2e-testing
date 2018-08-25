@@ -1,40 +1,73 @@
 # Defensor E2E Testing
 
-一套基于 “UIRecorder + Docker” 等技术二次开发的、可自动化运营的、 端到端级别的、功能回归的、自动化测试解决方案。
+一套基于 “UI Recorder + F2eTest + 持续集成引擎 + 国际化报告服务 + Hubot + Docker” 等技术二次开发的、可自动化运营的、用于 E2E 级功能测试的、自动化测试解决方案。
 
 ## 目标
 
 ```
-尽管诸多质量服务彼此之间风格殊异，却秉承着共同的坚定信念，那就是捍卫研发品质的崇高理想。合体成员理念上的共识，令守护神 Defensor 得以成为效能最高的合体战士。Defensor 一丝不苟的履行着自己的责任，守护着林林总总的产品体系。
-
+尽管诸多质量服务彼此之间风格殊异，却秉承着共同的坚定信念，那就是捍卫研发品质的崇高理想。
+合体成员理念上的共识，令守护神 Defensor 得以成为效能最高的合体战士。
+Defensor 一丝不苟的履行着自己的责任，守护着林林总总的产品体系。
 —— Defensor 宣言
 ```
 
 作为测试矩阵中的“ E2E 级功能测试”，从全局视角提升测试效益、实时保障系统质量。
 
-## 应用场景
-
-### 1. 私有部署环境，自动化验收工具
-
-**解决问题：**提升乙方交付前验收测试效率。
-
-**服务对象：**交付现场的产品同学、负责交付的研发同学等。
-
-**技术方案：**VPN 远程支持和 “UI Recorder + Docker” 两种技术方案。
-
-### 2. 研发环境，自动化功能测试服务
-
-**解决问题：**减少重复工作，提升测试效能、保障产品质量。
-
-**服务对象：**（前端、后端和算法等）研发同学、业务测试同学、国际化测试同学和部分产品同学。
-
-**技术方案：** “UIRecorder + F2eTest + 持续集成引擎 + 国际化报告服务 + Hubot” 技术方案
-
 ## 准备
 
-安装、录制和回放，请参考 [UI Recorder](https://github.com/alibaba/uirecorder)。
+### 安装前置依赖
 
-## 使用
+1. 安装 Nodejs : <https://nodejs.org/>
+
+2. 配置 Nodejs 权限
+
+   > `sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}`
+
+3. 安装 Chrome : <https://www.google.com/chrome/>
+
+4. 安装 UI Recorder 及 mocha : `npm install uirecorder mocha -g`
+
+### 初始化 uitest 仓库 
+
+```bash
+# 下载测试代码仓库
+git clone https://github.com/TingGe/defensor-e2e-testing.git
+# 安装仓库依赖
+npm install
+```
+
+## 本机录制和回放
+
+### 启动 Server
+
+仅需在最初使用时安装，之后无需重复安装驱动
+
+```bash
+npm run installdriver
+```
+
+启动 Server
+
+```bash
+npm start
+```
+
+### 录制脚本
+
+以 “test.spec.js” 为例，实际场景中需将 `test` 替换为有意义的脚本名
+
+```bash
+uirecorder specs/test.spec.js
+```
+
+### 回放测试脚本
+
+```sh
+source run.sh specs/test.spec.js
+# Windows 中执行 run.bat specs/test.spec.js
+```
+
+## 部署环境使用
 
 ### 流程
 
@@ -96,7 +129,25 @@
 ## 最佳实践
 
 1. [黑盒测试用例设计方法](https://www.cnblogs.com/Jackc/archive/2009/02/24/1397433.html)
-2. 自动化最佳实践
+2. [自动化最佳实践](https://github.com/TingGe/defensor-e2e-testing/blob/master/docs/best-practices.md)
+
+## 应用场景
+
+### 1. 私有部署环境，自动化验收工具
+
+解决问题： 提升乙方交付前验收测试效率。
+
+服务对象：交付现场的产品同学、负责交付的研发同学等。
+
+技术方案：VPN 远程支持和 “UI Recorder + Docker” 两种技术方案。
+
+### 2. 研发环境，自动化功能测试服务
+
+解决问题：减少重复工作，提升测试效能、保障产品质量。
+
+服务对象：（前端、后端和算法等）研发同学、业务测试同学、国际化测试同学和部分产品同学。
+
+技术方案： “UIRecorder + F2eTest + 持续集成引擎 + 国际化报告服务 + Hubot” 技术方案
 
 ## 许可 License
 
