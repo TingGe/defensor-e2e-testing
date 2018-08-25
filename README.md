@@ -1,5 +1,7 @@
 # Defensor E2E Testing
 
+# <img src="https://raw.githubusercontent.com/TingGe/defensor-e2e-testing/master/docs/logo.png" width="60px"> Defensor
+
 一套基于 “UI Recorder + F2eTest + 持续集成引擎 + 国际化报告服务 + Hubot + Docker” 等技术二次开发的、可自动化运营的、用于 E2E 级功能测试的、自动化测试解决方案。
 
 ## 目标
@@ -152,3 +154,4 @@ source run.sh specs/test.spec.js
 ## 许可 License
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FTingGe%2Fdefensor-e2e-testing.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FTingGe%2Fdefensor-e2e-testing?ref=badge_large)
+
