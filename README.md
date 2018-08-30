@@ -36,6 +36,15 @@ git clone https://github.com/TingGe/defensor-e2e-testing.git
 npm install
 ```
 
+### 配置 host
+
+```bash
+sudo vim /etc/hosts
+
+# 添加 Defensor 配置
+127.0.0.1 hub
+```
+
 ## 本机录制和回放
 
 ### 启动 Server
@@ -152,4 +161,3 @@ source run.sh specs/test.spec.js
 ## 许可 License
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FTingGe%2Fdefensor-e2e-testing.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FTingGe%2Fdefensor-e2e-testing?ref=badge_large)
-
