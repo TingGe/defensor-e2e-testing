@@ -21,7 +21,7 @@
 
 自动化测试的长远价值高于手工，所以如果自动化的性价比已经开始高于手工，就可以着手去做。项目后期和维护期，自动化介入为回归测试做准备，可以最大化自动化收益
 
-![](/Users/ting/github/defensor-e2e/docs/automation_Turning_point.jpg)
+![](https://raw.githubusercontent.com/TingGe/defensor-e2e-testing/80074647a7db139d8a9ed7dc081413173047ec0c/docs/automation_Turning_point.jpg)
 
 ## 前置准备
 
