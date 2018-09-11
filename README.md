@@ -72,7 +72,7 @@ uirecorder specs/test.spec.js
 ### 回放测试脚本
 
 ```sh
-source run.sh specs/test.spec.js
+sh run.sh specs/test.spec.js
 # Windows 中执行 run.bat specs/test.spec.js
 ```
 
@@ -80,7 +80,7 @@ source run.sh specs/test.spec.js
 
 ### 流程
 
-1. 安装 Defensor E2E Testing 的 Docker 镜像
+1. 安装 Docker 软件和 Defensor E2E Testing 的 Docker 镜像，并启动 Docker
 
 2. 启动容器
 
