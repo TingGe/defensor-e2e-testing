@@ -1,0 +1,30 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -f docker-compose.yml
+    kompose.version: 1.16.0 (0c01309)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: node-chrome
+  name: node-chrome
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: node-chrome
+    spec:
+      containers:
+      - env:
+        - name: HUB_PORT_4444_TCP_ADDR
+          value: hub
+        - name: HUB_PORT_4444_TCP_PORT
+          value: "4444"
+        image: selenium/node-chrome:3.14.0-arsenic
+        name: node-chrome
+        resources: {}
+      restartPolicy: Always
+status: {}

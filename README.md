@@ -135,6 +135,10 @@ sh run.sh specs/test.spec.js
 2. “服务器地址：” 中填写 `vnc://127.0.0.1:5900`，并点击连接；
 3. “密码：” 中填入默认密码 `secret`，再点击连接即可进入运行的  `node-chrome-debug` 容器中。
 
+### Kubernetes 适配
+
+使用 [Kompose](https://github.com/kubernetes/kompose) 将 docker-compose.yml 配置转换为 Kubernetes 配置。
+
 ## 最佳实践
 
 1. [黑盒测试用例设计方法](https://www.cnblogs.com/Jackc/archive/2009/02/24/1397433.html)

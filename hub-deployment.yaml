@@ -1,0 +1,27 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -f docker-compose.yml
+    kompose.version: 1.16.0 (0c01309)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: hub
+  name: hub
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: hub
+    spec:
+      containers:
+      - image: selenium/hub:3.14.0-arsenic
+        name: hub
+        ports:
+        - containerPort: 4444
+        resources: {}
+      restartPolicy: Always
+status: {}
