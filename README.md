@@ -162,6 +162,13 @@ sh run.sh specs/test.spec.js
 
 技术方案： “UIRecorder + F2eTest + 持续集成引擎 + 国际化报告服务 + Hubot” 技术方案
 
+## 参考
+
+- [GitLab + Drone 构建 CI&CD 环境](https://laravel-china.org/articles/17207)
+- [SpringBoot 集成 React 一体化打包部署](https://www.wanaright.com/2017/03/25/springboot-react-dva/)
+- [Macaca](https://www.anquanke.com/post/id/152729)
+- [Wings-让单元测试智能全自动生成](http://www.threadingtest.com/newstest/Wings%E5%8F%91%E5%B8%83-%E8%AE%A9%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%99%BA%E8%83%BD%E5%85%A8%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90.html)
+
 ## 许可 License
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FTingGe%2Fdefensor-e2e-testing.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FTingGe%2Fdefensor-e2e-testing?ref=badge_large)
