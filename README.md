@@ -178,6 +178,12 @@ sh run.sh specs/test.spec.js
 
 技术方案： 同“1. 研发环境，持续测试服务”。
 
+## 参考
+
+- [GitLab + Drone 构建 CI&CD 环境](https://laravel-china.org/articles/17207)
+- [SpringBoot 集成 React 一体化打包部署](https://www.wanaright.com/2017/03/25/springboot-react-dva/)
+- [Macaca](https://www.anquanke.com/post/id/152729)
+
 ## 许可 License
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FTingGe%2Fdefensor-e2e-testing.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FTingGe%2Fdefensor-e2e-testing?ref=badge_large)
