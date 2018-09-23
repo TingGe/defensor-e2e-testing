@@ -180,6 +180,8 @@ sh run.sh specs/test.spec.js
 
 ## 参考
 
+- [基于Docker和Kubernetes的最佳架构实践](https://blog.csdn.net/AlbenXie/article/details/80419885)
+
 - [GitLab + Drone 构建 CI&CD 环境](https://laravel-china.org/articles/17207)
 - [SpringBoot 集成 React 一体化打包部署](https://www.wanaright.com/2017/03/25/springboot-react-dva/)
 - [Macaca](https://www.anquanke.com/post/id/152729)
