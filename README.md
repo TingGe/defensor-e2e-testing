@@ -32,7 +32,9 @@ Defensor 一丝不苟的履行着自己的责任，守护着林林总总的产�
 ```bash
 # 下载测试代码仓库
 git clone https://github.com/TingGe/defensor-e2e-testing.git
+
 # 安装仓库依赖
+cd ./defensor-e2e-testing
 npm install
 ```
 
