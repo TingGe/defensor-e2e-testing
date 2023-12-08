@@ -4,13 +4,13 @@
   "description": "UIRecorder Docker 二次开发、可自动化运营、 端到端级别的功能回归的自动化测试解决方案",
   "main": "",
   "dependencies": {
-    "chai": "3.5.0",
-    "jwebdriver": "2.2.4",
-    "mocha": "3.1.2",
+    "chai": "^4.3.10",
+    "jwebdriver": "^2.3.6",
+    "mocha": "^10.2.0",
     "mocha-parallel-tests": "1.2.4",
-    "mochawesome-uirecorder": "1.5.22",
+    "mochawesome-uirecorder": "1.5.25",
     "resemblejs-node": "1.0.0",
-    "selenium-standalone": "6.x.x",
+    "selenium-standalone": "^9.3.0",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "webdriver=127.0.0.1 npm run server",
-    "installdriver": "./node_modules/.bin/selenium-standalone install --drivers.firefox.baseURL=http://npm.taobao.org/mirrors/geckodriver --baseURL=http://npm.taobao.org/mirrors/selenium --drivers.chrome.baseURL=http://npm.taobao.org/mirrors/chromedriver --drivers.ie.baseURL=http://npm.taobao.org/mirrors/selenium",
+    "installdriver": "./node_modules/.bin/selenium-standalone install",
     "server": "./node_modules/.bin/selenium-standalone start",
     "test": "./node_modules/.bin/mocha \"!(node_modules)/**/*.spec.js\" --reporter mochawesome-uirecorder --bail",
     "singletest": "./node_modules/.bin/mocha --reporter mochawesome-uirecorder --bail",
